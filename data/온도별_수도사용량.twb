@@ -1,0 +1,534 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0313.2002                               -->
+<workbook original-version='18.1' source-build='2025.1.0 (20251.25.0313.2002)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='merged_data' inline='true' name='federated.1ylluye13f2nk00zzv8y40c4tpqm' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='merged_data' name='textscan.1g6j9s10yt0bqu15zdn0q10mv1gb'>
+            <connection class='textscan' directory='E:/self/car_ana/data' filename='merged_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1g6j9s10yt0bqu15zdn0q10mv1gb' name='merged_data.csv' table='[merged_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+            <column datatype='integer' name='연도' ordinal='0' />
+            <column datatype='integer' name='월' ordinal='1' />
+            <column datatype='integer' name='상하수도사용량' ordinal='2' />
+            <column datatype='real' name='평균기온' ordinal='3' />
+            <column datatype='real' name='최저기온' ordinal='4' />
+            <column datatype='real' name='최고기온' ordinal='5' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[merged_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;ko&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₩&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;ko_KR&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>연도</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[연도]</local-name>
+            <parent-name>[merged_data.csv]</parent-name>
+            <remote-alias>연도</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>월</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[월]</local-name>
+            <parent-name>[merged_data.csv]</parent-name>
+            <remote-alias>월</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>상하수도사용량</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[상하수도사용량]</local-name>
+            <parent-name>[merged_data.csv]</parent-name>
+            <remote-alias>상하수도사용량</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>평균기온</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[평균기온]</local-name>
+            <parent-name>[merged_data.csv]</parent-name>
+            <remote-alias>평균기온</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>최저기온</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[최저기온]</local-name>
+            <parent-name>[merged_data.csv]</parent-name>
+            <remote-alias>최저기온</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>최고기온</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[최고기온]</local-name>
+            <parent-name>[merged_data.csv]</parent-name>
+            <remote-alias>최고기온</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='merged_data.csv' datatype='table' name='[__tableau_internal_object_id__].[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[상하수도사용량]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[연도]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[월]' role='measure' type='quantitative' />
+      <column datatype='real' name='[최고기온]' role='measure' type='quantitative' />
+      <column datatype='real' name='[평균기온]' role='measure' type='quantitative' />
+      <column-instance column='[연도]' derivation='Attribute' name='[attr:연도:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[월]' derivation='None' name='[none:월:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[상하수도사용량]' derivation='Sum' name='[sum:상하수도사용량:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[연도]' derivation='Sum' name='[sum:연도:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[월]' derivation='Sum' name='[sum:월:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[최고기온]' derivation='Sum' name='[sum:최고기온:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[평균기온]' derivation='Sum' name='[sum:평균기온:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='ko_KR' class='hyper' dbname='C:/Users/jeonj/AppData/Local/Temp/TableauTemp/#TableauTemp_0aqz96f131ym1j1ei1l0o0o42ur6.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/01/2025 03:15:58 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>연도</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[연도]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>연도</remote-alias>
+              <ordinal>0</ordinal>
+              <family>merged_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>월</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[월]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>월</remote-alias>
+              <ordinal>1</ordinal>
+              <family>merged_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>상하수도사용량</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[상하수도사용량]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>상하수도사용량</remote-alias>
+              <ordinal>2</ordinal>
+              <family>merged_data.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>평균기온</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[평균기온]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>평균기온</remote-alias>
+              <ordinal>3</ordinal>
+              <family>merged_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>122</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>최저기온</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[최저기온]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>최저기온</remote-alias>
+              <ordinal>4</ordinal>
+              <family>merged_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>최고기온</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[최고기온]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>최고기온</remote-alias>
+              <ordinal>5</ordinal>
+              <family>merged_data.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>120</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[merged_data.csv_605DB033F5C040DE97733886ECA1A4A1]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='shape' field='[:Measure Names]' type='shape'>
+            <map to='circle'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[attr:연도:qk]&quot;</bucket>
+            </map>
+            <map to='circle'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:연도:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[none:월:qk]&quot;</bucket>
+            </map>
+            <map to='square'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:월:qk]&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[attr:연도:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:상하수도사용량:qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:연도:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:최고기온:qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:평균기온:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[none:월:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:월:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;대한민국&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='merged_data.csv' id='merged_data.csv_605DB033F5C040DE97733886ECA1A4A1'>
+            <properties context=''>
+              <relation connection='textscan.1g6j9s10yt0bqu15zdn0q10mv1gb' name='merged_data.csv' table='[merged_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='ko_KR' separator=','>
+                  <column datatype='integer' name='연도' ordinal='0' />
+                  <column datatype='integer' name='월' ordinal='1' />
+                  <column datatype='integer' name='상하수도사용량' ordinal='2' />
+                  <column datatype='real' name='평균기온' ordinal='3' />
+                  <column datatype='real' name='최저기온' ordinal='4' />
+                  <column datatype='real' name='최고기온' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='시트 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>온도별 수도 사용량&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='merged_data' name='federated.1ylluye13f2nk00zzv8y40c4tpqm' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1ylluye13f2nk00zzv8y40c4tpqm'>
+            <column-instance column='[연도]' derivation='Attribute' name='[attr:연도:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[월]' derivation='None' name='[none:월:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[상하수도사용량]' derivation='Sum' name='[sum:상하수도사용량:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[평균기온]' derivation='Sum' name='[sum:평균기온:qk]' pivot='key' type='quantitative' />
+            <column datatype='integer' name='[상하수도사용량]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[연도]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[월]' role='measure' type='quantitative' />
+            <column datatype='real' name='[평균기온]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:평균기온:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <lod column='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[attr:연도:qk]' />
+              <color column='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:상하수도사용량:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <lod column='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[attr:연도:qk]' />
+              <color column='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[:Measure Names]' />
+            </encodings>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:평균기온:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <lod column='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[attr:연도:qk]' />
+              <color column='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:상하수도사용량:qk] + [federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:평균기온:qk])</rows>
+        <cols>[federated.1ylluye13f2nk00zzv8y40c4tpqm].[none:월:qk]</cols>
+      </table>
+      <simple-id uuid='{1B74DF82-091C-4D21-A890-DF498F9D2C1E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='시트 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1ylluye13f2nk00zzv8y40c4tpqm].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <axis>[federated.1ylluye13f2nk00zzv8y40c4tpqm].[sum:평균기온:qk]</axis>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1ylluye13f2nk00zzv8y40c4tpqm].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{BF385558-6377-47D5-9E45-58C57DFB49D0}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='시트 1' width='192'>
+      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
+      /D/VMD2ePkjJdwAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
